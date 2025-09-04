@@ -16,3 +16,7 @@ I executed llama-simple.wasm via wasmedge as shown below. I did not include logg
 The answer is a screen capture in the file **milestone-2-answer-42.png**. I did not upload the llama-simple.wasm file.
 
 *Note: I started organizing the main branch to hold the milestone projects in folders while keeping the branches for each one as well.*
+
+## Milestone 3
+
+I pasted the text from command.txt into the terminal and captured a screenshot showing the chat bot's response in a PNG file.

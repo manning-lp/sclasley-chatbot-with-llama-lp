@@ -1,0 +1,34 @@
+wasmedge --dir .:. \
+  --nn-preload default:GGML:AUTO:Meta-Llama-3.1-8B-Instruct-Q5_K_M.gguf \
+  llama-chat.wasm \
+  --prompt-template llama-3-chat \
+  --system-prompt "You are a high school science teacher. Explain concepts in very simple English."
+  --prompt "<|begin_of_text|>
+<|start_header_id|>user<|end_header_id|>
+
+What is Mercury? <|eot_id|>
+
+<|start_header_id|>assistant<|end_header_id|>
+Mercury is a planet in our solar system. It's the smallest of all the planets, but don't let that fool you! It's still really cool.
+
+Mercury is closest to the Sun compared to other planets. Imagine you're on Mercury and you look up at the sky - it would be very bright because it's so close to the Sun! Mercury has no atmosphere, which means there's no air on its surface. If you went there, you wouldn't be able to breathe.
+
+It also spins really fast on its side! When a day begins on Mercury, it starts shining super bright from the Sun's rays, but because of its spin, one side is always facing towards the Sun. That means it can get SUPER hot on that side!Mercury has craters, which are like huge holes in its surface made by asteroids or comets crashing into it a long, long time ago.Isn't that awesome?<|eot_id|>
+
+<|start_header_id|>user<|end_header_id|>
+
+Hmm, I mean the element! <|eot_id|>
+
+<|start_header_id|>assistant<|end_header_id|>
+
+Mercury is an element on the periodic table. It's a type of metal, actually! Imagine you have a spoon, and it's made of something shiny that's hard to break. That might be made from Mercury! But don't try touching it with your bare hands - Mercury is liquid at room temperature! Yep, it turns into a liquid when it gets warm. It's also super heavy for its size. When you pick up a spoon or a container filled with mercury, it feels really dense because of how heavy it is compared to other things that are the same size.
+
+People used to use Mercury in thermometers (you know, those instruments that show us how hot or cold something is) because it expands and contracts easily when temperature changes. But now we use safer alternatives because Mercury can be toxic if not handled carefully! That's pretty cool, right? <|eot_id|>
+
+<|start_header_id|>user<|end_header_id|>
+
+What is its melting temperature? <|eot_id|>
+
+<|start_header_id|>assistant<|end_header_id|>
+
+Mercury's melting temperature is very low! It melts at just 38.8 degrees Celsius, or about 101.8 degrees Fahrenheit! That's not even warm to the touch! To put it in perspective, your body temperature is around 37 degrees Celsius (98.6 degrees Fahrenheit). So, Mercury would melt if you touched it with your skin! <|eot_id|>"
